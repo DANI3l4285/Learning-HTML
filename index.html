@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first web</title>
+    <style>
+        table, th, td { 
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo 1</h1>
+    <h2>Titulo 2</h2>
+    <h3>Titulo 3</h3>
+    <h4>Titulo 4</h4>
+    <h5>Titulo 5</h5>
+    <h6>Titulo 6</h6>
+    <p>primer parrafo</p>
+    <!-- La etiqueta hr la utilizamos para crear una linea de separacion -->
+    <hr>
+    <!-- El objetivo de la etiqueta span en HTML es poder identificar un
+     texto dentra de otra etiqueta -->
+    <p>Segundo parrafo en el <span style="color:blue">cual probaremos la etiqueta span </span>y la etiqueta br la cual se utiliza para <br>realizar un salto de linea</p>
+
+    <!-- el parametro target permite que el link al cual estamos haciendo 
+     referencia se pueda abrir en una nueva ventana -->
+    <a target="_blank" href="https://www.youtube.com/watch?v=MJkdaVFHrto">Enlace al curso en el cual aprendi HTML</a>
+
+    <br><h4>Como insertar una imagen descargada en el computador</h4>
+    <img src="img/html.jpeg" width="400" height="300"/>
+
+    <!-- Formularios -->
+
+    <form action="/formulario" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ester"/>
+        <br>
+        <label for="nombre">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Gutierrez"/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea rows="10" cols="50" id="comentario" name="comentario" placeholder="Ingrese su comentario"></textarea>
+
+        <!-- Una etiqueta de button es mucho mas personalizable que una etiqueta de input -->
+        <button type="button"><img src="img/html.jpeg" width="50"><br>Tipo boton</button><!-- Necesario especificarle el comportamiento en js -->
+        <button type="reset">Tipo reset</button><!-- Reestablece los valores predeterminados que se ingresaron con value -->
+        <button type="submit">Tipo submit</button><!-- Envia los datos a la ruta que hallamos especifado en el form action -->
+    </form>
+
+    <br><hr><br>
+    <h2>Listas ordenadas y desordenadas</h2>
+    <p>Primer ejemplo en el que se muestra una lista desordenada</p>
+    <ul>
+        <li>Elemento numero 1</li>
+        <li>Elemento numero 2</li>
+        <li>Elemento numero 3</li>
+        <li>Elemento numero 4 </li>
+    </ul>
+    <p>Primer ejemplo en el que se muestra una lista ordenada</p>
+    </p>
+    <ol> <!-- Con li value="" indicamos el numero en el que queremos comenzar a enlistar -->
+        <li>Elemento numero 1</li>
+        <li>Elemento numero 2</li>
+        <li>Elemento numero 3</li>
+        <li>Elemento numero 4 </li>
+        <ol style="list-style-type:lower-alpha;"> 
+            <li>Sub elemento 1</li>
+            <li>Sub elemento 2</li>
+            <li>Sub elemento 3</li>
+        </ol>
+    
+    </ol><!-- Al añadir tamaño en una tabla no olvidar el px al final (Solo el valor no funciona) -->
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Manzana</td>
+            <td>Q.10.00</td>
+        </tr>
+        <tr>
+            <td>Pera</td>
+            <td>Q.13.00</td>
+        </tr>
+        <tr>
+            <td>Zanahoria</td>
+            <td>Q.4.00</td>
+        </tr>
+        </tbody> 
+        <tfoot>
+            <td></td>
+            <td>Total:  Q.27.00</td>
+        </tfoot>
+    </table>
+</body>
+</html>
